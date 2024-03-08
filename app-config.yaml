@@ -1,5 +1,5 @@
 app:
-  title: Backstage Example App
+  title: portal App
   baseUrl: http://localhost:3000
   experimental:
     packages: all # ✨
