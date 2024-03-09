@@ -15,15 +15,15 @@ app:
       - title: Issues
         icon: github
         links:
-          - url: https://github.com/backstage/backstage/issues
+          - url: https://github.com/ecampuslearning/portal-app/issues
             title: GitHub Issues
       - title: Discord Chatroom
         icon: chat
         links:
-          - url: https://discord.gg/backstage-687207715902193673
-            title: '#backstage'
+          - url: https://discord.gg/ecampuslearning-687207715902193673
+            title: 'portal-app'
 
-  packageName: example-app
+  packageName: portal-app
 
 backend:
   # Used for enabling authentication, secret is shared by all backend plugins
@@ -166,10 +166,11 @@ scorecards:
   wikiLinkTemplate: https://link-to-wiki/{id}
 
 sentry:
-  organization: my-company
+  organization: eCampuslearning
 
 rollbar:
-  organization: my-company
+  organization:  eCampuslearning
+
   # NOTE: The rollbar-backend & accountToken key may be deprecated in the future (replaced by a proxy config)
   accountToken: my-rollbar-account-token
 
@@ -184,7 +185,7 @@ kubernetes:
       clusters: []
 
 kafka:
-  clientId: backstage
+  clientId: portal
   clusters:
     - name: cluster
       dashboardUrl: https://akhq.io/
@@ -200,7 +201,7 @@ integrations:
       token: ${GITHUB_TOKEN}
   ### Example for how to add your GitHub Enterprise instance using the API:
   # - host: ghe.example.net
-  #   apiBaseUrl: https://ghe.example.net/api/v3
+  #   apiBaseUrl: https://api.ecampuslearning.com/v3
   #   token: ${GHE_TOKEN}
   ### Example for how to add your GitHub Enterprise instance using raw HTTP fetches (token is optional):
   # - host: ghe.example.net
